@@ -7,24 +7,6 @@ void main() {
   runApp(const MyApp());
 }
 
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: Scaffold(
-//         body: Center(
-//           child: Image.asset(
-//               'assets/images/logo_simbol.png',width: 150,
-//                               height: 150,
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
