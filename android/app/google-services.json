@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "76603854904",
+    "project_id": "clonebamtol",
+    "storage_bucket": "clonebamtol.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76603854904:android:fada312cd54df7ac5f96cd",
+        "android_client_info": {
+          "package_name": "com.example.bamtol_market"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwWM8LuaGJH_4rd4IK3tPDVPF1OHh5i3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
