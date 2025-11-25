@@ -12,6 +12,6 @@ class InitStartPage extends StatelessWidget {
           style: TextStyle(color: Colors.white),
         ),
       ),
-    )
+    );
   }
 }
