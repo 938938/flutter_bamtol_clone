@@ -1,3 +1,4 @@
+import 'package:bamtol_market/src/comon/components/app_font.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -17,22 +18,17 @@ class InitStartPage extends StatelessWidget {
               child: Image.asset('assets/images/logo_simbol.png'),
             ),
             const SizedBox(height: 40),
-            Text(
+            const AppFont(
               '당신 근처의 밤톨마켓',
-              style: GoogleFonts.notoSans(
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-                color: Colors.white,
-              ),
+               fontWeight: FontWeight.bold,
+                size: 20,
             ),
             const SizedBox(height: 15),
-            Text(
+            AppFont(
               '중고 거래부터 동네 정보까지, \n지금 내 동네를 선택하고 시작해보세요!',
-              textAlign: TextAlign.center,
-              style: GoogleFonts.notoSans(
-                fontSize: 18,
+                align: TextAlign.center,
+                size: 18,
                 color: Colors.white.withOpacity(0.6),
-              ),
             )
           ],
         ),
