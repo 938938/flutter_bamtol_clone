@@ -1,4 +1,5 @@
 import 'package:bamtol_market/src/comon/components/app_font.dart';
+import 'package:bamtol_market/src/comon/components/btn.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -36,20 +37,13 @@ class InitStartPage extends StatelessWidget {
           right: 25,
           bottom: 25 + Get.mediaQuery.padding.bottom,
         ),
-        child: GestureDetector(
+        child: Btn(
           onTap: () {},
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(7),
-            child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 15),
-              color: const Color(0xffED7738),
-              child: const AppFont(
-                '시작하기',
-                align: TextAlign.center,
-                size: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+          child: const AppFont(
+            '시작하기',
+            align: TextAlign.center,
+            size: 18,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
