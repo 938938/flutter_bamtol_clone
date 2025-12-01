@@ -19,7 +19,12 @@ class _AppState extends State<App> {
     isInitStarted = prefs.getBool('isInitStarted') ?? true;
   }
   Widget build(BuildContext context) {
-    return isInitStarted ? const InitStartPage() : const SplashPage();
+    return isInitStarted ? InitStartPage(onStart: (){
+      setState(() {
+        isInitStarted = false;
+      });
+      prefs.setBool('isInitStarted', isInitStarted);
+    }) : const SplashPage();
   }
 }
 

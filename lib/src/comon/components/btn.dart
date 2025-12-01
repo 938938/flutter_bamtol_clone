@@ -18,6 +18,6 @@ class Btn extends StatelessWidget {
           child: child,
         ),
       ),
-    )
+    );
   }
 }

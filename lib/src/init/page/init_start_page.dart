@@ -5,7 +5,8 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class InitStartPage extends StatelessWidget {
-  const InitStartPage({super.key});
+  final Function() onStart;
+  const InitStartPage({super.key, required this.onStart});
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +39,7 @@ class InitStartPage extends StatelessWidget {
           bottom: 25 + Get.mediaQuery.padding.bottom,
         ),
         child: Btn(
-          onTap: () {},
+          onTap: onStart,
           child: const AppFont(
             '시작하기',
             align: TextAlign.center,
