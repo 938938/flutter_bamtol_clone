@@ -1,4 +1,5 @@
 import 'package:bamtol_market/firebase_options.dart';
+import 'package:bamtol_market/src/splash/controller/splash_controller.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -33,6 +34,9 @@ class MyApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: const Color(0xff212123),
       ),
+      initialBinding: BindingsBuilder((){
+        Get.put(SplashController());
+      }),
       getPages: [
         GetPage(name: '/', page: ()=> const App()),
       ],

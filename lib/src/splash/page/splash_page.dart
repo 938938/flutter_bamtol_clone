@@ -1,15 +1,19 @@
+import 'package:bamtol_market/src/splash/controller/splash_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends GetView<SplashController> {
   const SplashPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text(
-          'Splash 페이지',
-          style: TextStyle(color: Colors.white),
+        child: Obx(
+            () => Text(
+              '${controller.loadStep.value.name} 중 입니다.',
+              style: const TextStyle(color: Colors.white),
+            ),
         ),
       ),
     );
