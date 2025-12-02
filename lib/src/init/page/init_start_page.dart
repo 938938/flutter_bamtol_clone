@@ -1,8 +1,7 @@
-import 'package:bamtol_market/src/comon/components/app_font.dart';
-import 'package:bamtol_market/src/comon/components/btn.dart';
+import 'package:bamtol_market/src/common/components/app_font.dart';
+import 'package:bamtol_market/src/common/components/btn.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class InitStartPage extends StatelessWidget {
   final Function() onStart;

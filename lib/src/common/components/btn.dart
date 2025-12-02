@@ -1,4 +1,4 @@
-import 'package:bamtol_market/src/comon/components/app_font.dart';
+import 'package:bamtol_market/src/common/components/app_font.dart';
 import 'package:flutter/material.dart';
 
 class Btn extends StatelessWidget {
